@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get your free removal quote from CR Removals. Fill out our simple inventory form and we'll call you back with a detailed quote.">
+    <title>Get a Quote - CR Removals | Free No-Obligation Quotes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📦</span>
+                <span>CR Removals</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quote.html" class="active">Get a Quote</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:01914896000" class="phone-button">0191 489 6000</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Quote Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get Your Free Quote</h1>
+                <p class="tagline">Three simple steps to your stress-free move</p>
+                
+                <div class="quote-steps">
+                    <div class="quote-step">
+                        <div class="step-number">1</div>
+                        <h3>Fill in the Form</h3>
+                        <p>Tell us about your move and what you need shifted</p>
+                    </div>
+                    <div class="quote-step">
+                        <div class="step-number">2</div>
+                        <h3>We Calculate</h3>
+                        <p>Our team reviews your inventory and prepares your quote</p>
+                    </div>
+                    <div class="quote-step">
+                        <div class="step-number">3</div>
+                        <h3>You Get a Call</h3>
+                        <p>We call you back with a full breakdown and fixed price</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="quote-section">
+        <div class="container">
+            <form class="quote-form" id="quoteForm" action="https://formsubmit.co/info@crremovals.co.uk" method="POST">
+                <!-- Hidden FormSubmit configuration -->
+                <input type="hidden" name="_subject" value="New Quote Request from CR Removals Website">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                
+                <!-- Customer Information Section -->
+                <div class="form-section customer-info-section">
+                    <h2>Your Details</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="customerName">Your Name *</label>
+                            <input type="text" id="customerName" name="Customer_Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Phone Number *</label>
+                            <input type="tel" id="telephone" name="Telephone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dateOfMove">Date of Move *</label>
+                            <input type="date" id="dateOfMove" name="Date_of_Move" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Moving From *</label>
+                            <input type="text" name="Moving_From_Line_1" placeholder="Address Line 1" required style="margin-bottom: 0.5rem;">
+                            <input type="text" name="Moving_From_Line_2" placeholder="Address Line 2" style="margin-bottom: 0.5rem;">
+                            <input type="text" name="Moving_From_Town" placeholder="Town/City" required style="margin-bottom: 0.5rem;">
+                            <input type="text" name="Moving_From_County" placeholder="County" style="margin-bottom: 0.5rem;">
+                            <input type="text" name="Moving_From_Postcode" placeholder="Postcode" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Moving To *</label>
+                            <input type="text" name="Moving_To_Line_1" placeholder="Address Line 1" required style="margin-bottom: 0.5rem;">
+                            <input type="text" name="Moving_To_Line_2" placeholder="Address Line 2" style="margin-bottom: 0.5rem;">
+                            <input type="text" name="Moving_To_Town" placeholder="Town/City" required style="margin-bottom: 0.5rem;">
+                            <input type="text" name="Moving_To_County" placeholder="County" style="margin-bottom: 0.5rem;">
+                            <input type="text" name="Moving_To_Postcode" placeholder="Postcode" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Access within 20 yards? *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="Access_Within_20_Yards" value="yes" required checked>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="Access_Within_20_Yards" value="no" required>
+                                <span>No</span>
+                            </label>
+                        </div>
+                        <input type="text" id="distanceField" name="Distance_if_No" placeholder="If no, please specify distance" style="margin-top: 1rem; display: none;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialConditions">Special Conditions / Additional Information</label>
+                        <textarea id="specialConditions" name="Special_Conditions" rows="4" placeholder="Any special requirements, access issues, parking restrictions, etc."></textarea>
+                    </div>
+                </div>
+
+                <!-- Inventory Sections -->
+                <div class="inventory-section">
+                    <h2>Your Inventory</h2>
+                    <p class="inventory-instruction">Select the items you need moved. Click on each section to expand and add quantities.</p>
+
+                    <!-- Living Room -->
+                    <div class="category-section">
+                        <button type="button" class="category-header active">
+                            <span class="category-title">Living Room</span>
+                            <span class="category-toggle">−</span>
+                        </button>
+                        <div class="category-content" style="display: block;">
+                            <div class="items-grid">
+                                <div class="item-row">
+                                    <span class="item-name">Coffee Table (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Coffee_Table_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Coffee Table (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Coffee_Table_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">4 Seater Settee</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="4_Seater_Settee" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">3 Seater Settee</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="3_Seater_Settee" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">2 Seater Settee</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="2_Seater_Settee" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Armchair</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Armchair" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Welsh Dresser (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Welsh_Dresser_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Welsh Dresser (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Welsh_Dresser_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Wall Unit (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Wall_Unit_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Sideboard (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Sideboard_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Sideboard (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Sideboard_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Stereo</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Stereo" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Stereo Cabinet</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Stereo_Cabinet" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">CD Rack</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="CD_Rack" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">TV (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="TV_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">TV (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="TV_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">TV (Small)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="TV_Small" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">TV Cabinet (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="TV_Cabinet_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">TV Cabinet (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="TV_Cabinet_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">China Cabinet</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="China_Cabinet" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Bookcase (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Bookcase_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Bookcase (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Bookcase_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Bookcase (Small)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Bookcase_Small" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Occasional Table</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Occasional_Table" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-top: 1.5rem;">
+                                <label for="livingRoomOther">Any Other Living Room Items</label>
+                                <textarea id="livingRoomOther" name="Living_Room_Other" rows="2" placeholder="Please list any other items..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dining Room -->
+                    <div class="category-section">
+                        <button type="button" class="category-header">
+                            <span class="category-title">Dining Room</span>
+                            <span class="category-toggle">+</span>
+                        </button>
+                        <div class="category-content">
+                            <div class="items-grid">
+                                <div class="item-row">
+                                    <span class="item-name">Carpet</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Carpet" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Dining Table (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Dining_Table_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Dining Table (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Dining_Table_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Dining Table (Small)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Dining_Table_Small" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Gateleg Table</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Gateleg_Table" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Dining Chair</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Dining_Chair" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Carver Chair</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Carver_Chair" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Standard Lamp</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Standard_Lamp" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Piano</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Piano" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Piano Stool</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Piano_Stool" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Nest of Tables</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Nest_of_Tables" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Corner Wall Unit</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Corner_Wall_Unit" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-top: 1.5rem;">
+                                <label for="diningRoomOther">Any Other Dining Room Items</label>
+                                <textarea id="diningRoomOther" name="Dining_Room_Other" rows="2" placeholder="Please list any other items..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kitchen -->
+                    <div class="category-section">
+                        <button type="button" class="category-header">
+                            <span class="category-title">Kitchen</span>
+                            <span class="category-toggle">+</span>
+                        </button>
+                        <div class="category-content">
+                            <div class="items-grid">
+                                <div class="item-row">
+                                    <span class="item-name">Kitchen Table</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Kitchen_Table" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Kitchen Chair</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Kitchen_Chair" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Kitchen Stool</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Kitchen_Stool" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Hoover</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Hoover" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Desk (Small)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Desk_Small" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Cooker</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Cooker" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Computer</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Computer" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Printer/Scanner</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Printer_Scanner" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Office Chair</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Office_Chair" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Fridge Freezer</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Fridge_Freezer" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">American Fridge</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="American_Fridge" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Chest Freezer (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Chest_Freezer_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Wooden Bench</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Wooden_Bench" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Tumble Dryer</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Tumble_Dryer" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Washer</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Washer" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Dish Washer</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Dish_Washer" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Ladder</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Ladder" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Lawnmower</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Lawnmower" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Bicycle</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Bicycle" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Step Ladder</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Step_Ladder" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Microwave</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Microwave" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Patio Set</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Patio_Set" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Garden Tools</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Garden_Tools" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-top: 1.5rem;">
+                                <label for="kitchenOther">Any Other Kitchen Items</label>
+                                <textarea id="kitchenOther" name="Kitchen_Other" rows="2" placeholder="Please list any other items..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bedroom -->
+                    <div class="category-section">
+                        <button type="button" class="category-header">
+                            <span class="category-title">Bedroom</span>
+                            <span class="category-toggle">+</span>
+                        </button>
+                        <div class="category-content">
+                            <div class="items-grid">
+                                <div class="item-row">
+                                    <span class="item-name">Wardrobe (Double)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Wardrobe_Double" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Wardrobe Single</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Wardrobe_Single" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Dressing Table (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Dressing_Table_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Dressing Table (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Dressing_Table_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Garment Carrier</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Garment_Carrier" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Chest of Drawers (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Chest_of_Drawers_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Chest of Drawers (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Chest_of_Drawers_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Chest of Drawers (Small)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Chest_of_Drawers_Small" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Tall Boy</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Tall_Boy" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">King Size Bed & Mattress</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="King_Size_Bed_Mattress" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Double Bed & Mattress</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Double_Bed_Mattress" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Single Bed & Mattress</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Single_Bed_Mattress" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Bunk Beds (Dismantled)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Bunk_Beds_Dismantled" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Cot</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Cot" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Folding Bed</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Folding_Bed" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Continental Headboard</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Continental_Headboard" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">King size Headboard</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="King_size_Headboard" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Ottoman/Blanket Box</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Ottoman_Blanket_Box" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Trunk</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Trunk" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Bedside Cabinet</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Bedside_Cabinet" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Standing Mirror</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Standing_Mirror" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Chaise Longue</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Chaise_Longue" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-top: 1.5rem;">
+                                <label for="bedroomOther">Any Other Bedroom Items</label>
+                                <textarea id="bedroomOther" name="Bedroom_Other" rows="2" placeholder="Please list any other items..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study/Office -->
+                    <div class="category-section">
+                        <button type="button" class="category-header">
+                            <span class="category-title">Study/Office</span>
+                            <span class="category-toggle">+</span>
+                        </button>
+                        <div class="category-content">
+                            <div class="items-grid">
+                                <div class="item-row">
+                                    <span class="item-name">Bureau (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Bureau_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Cupboard</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Cupboard" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Mirror (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Mirror_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Mirror/Picture (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Mirror_Picture_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Rug (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Rug_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Rug (Medium)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Rug_Medium" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Folded Boxes</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Folded_Boxes" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Bags</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Bags" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Bins/Baskets</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Bins_Baskets" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Suitcases/Holdalls</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Suitcases_Holdalls" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Ironing Board</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Ironing_Board" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-top: 1.5rem;">
+                                <label for="studyOther">Any Other Study/Office Items</label>
+                                <textarea id="studyOther" name="Study_Office_Other" rows="2" placeholder="Please list any other items..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outside/Garden -->
+                    <div class="category-section">
+                        <button type="button" class="category-header">
+                            <span class="category-title">Outside/Garden</span>
+                            <span class="category-toggle">+</span>
+                        </button>
+                        <div class="category-content">
+                            <div class="items-grid">
+                                <div class="item-row">
+                                    <span class="item-name">Grandfather Clock</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Grandfather_Clock" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">High Chair</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="High_Chair" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Golf Clubs</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Golf_Clubs" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Bathroom Cabinet</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Bathroom_Cabinet" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Patio Heater</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Patio_Heater" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Gazebo (Dismantled)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Gazebo_Dismantled" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Garden Burner</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Garden_Burner" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Dolls House</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Dolls_House" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Trampoline (Dism)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Trampoline_Dism" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Toy Boxes (open)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Toy_Boxes_open" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Children's Slide</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Childrens_Slide" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Children's Swing (Dism)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Childrens_Swing_Dism" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Plant Pots (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Plant_Pots_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Plant Pots (Small)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Plant_Pots_Small" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Shoe Cabinet</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Shoe_Cabinet" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-top: 1.5rem;">
+                                <label for="outsideOther">Any Other Outside/Garden Items</label>
+                                <textarea id="outsideOther" name="Outside_Garden_Other" rows="2" placeholder="Please list any other items..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Special Items -->
+                    <div class="category-section">
+                        <button type="button" class="category-header">
+                            <span class="category-title">Special Items</span>
+                            <span class="category-toggle">+</span>
+                        </button>
+                        <div class="category-content">
+                            <div class="items-grid">
+                                <div class="item-row">
+                                    <span class="item-name">Exercise Equip (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Exercise_Equip_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Exercise Equip (Small)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Exercise_Equip_Small" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Gas/Electric Fire</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Gas_Electric_Fire" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Filing Cabinet (4 drawer)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Filing_Cabinet_4_drawer" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Filing Cabinet (2 drawer)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Filing_Cabinet_2_drawer" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Workbench (Large)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Workbench_Large" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Workbench (Small)</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Workbench_Small" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <span class="item-name">Benchtop tools</span>
+                                    <div class="quantity-control">
+                                        <button type="button" class="qty-btn minus">−</button>
+                                        <input type="number" name="Benchtop_tools" value="0" min="0" max="20" readonly>
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-top: 1.5rem;">
+                                <label for="specialItemsOther">Any Other Special Items</label>
+                                <textarea id="specialItemsOther" name="Special_Items_Other" rows="2" placeholder="Please list any other items..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary btn-large">Request Your Quote</button>
+                    <p class="submit-note">We'll review your inventory and call you back with a detailed quote within 24 hours</p>
+                </div>
+            </form>
+
+            <!-- Success Message (hidden by default) -->
+            <div id="successMessage" class="success-message" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h2>We're Generating Your Quote!</h2>
+                <p>Thank you for your submission. Our team will review your inventory and call you back with a detailed quote within 24 hours.</p>
+                <a href="index.html" class="btn btn-secondary" style="margin-top: 2rem;">Return to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CR Removals</h3>
+                    <p>Professional removal services across Newcastle and nationwide. Family-owned and operated since 2010.</p>
+                    <p class="mt-2">
+                        <strong>Phone:</strong> 0191 489 6000<br>
+                        <strong>Email:</strong> info@crremovals.co.uk
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="quote.html">Get a Quote</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="quote.html">House Removals</a></li>
+                        <li><a href="quote.html">Office Removals</a></li>
+                        <li><a href="quote.html">Piano Removals</a></li>
+                        <li><a href="quote.html">Packing Services</a></li>
+                        <li><a href="quote.html">Storage Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <p>Based in Newcastle upon Tyne, we cover the entire North East and offer nationwide removal services.</p>
+                    <p class="mt-2">Newcastle • Gateshead • Sunderland • Durham • Northumberland • Nationwide</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 CR Removals Newcastle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Access within 20 yards radio button logic
+        const accessRadios = document.querySelectorAll('input[name="Access_Within_20_Yards"]');
+        const distanceField = document.getElementById('distanceField');
+
+        accessRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.value === 'no') {
+                    distanceField.style.display = 'block';
+                } else {
+                    distanceField.style.display = 'none';
+                    distanceField.value = '';
+                }
+            });
+        });
+
+        // Category accordion functionality
+        const categoryHeaders = document.querySelectorAll('.category-header');
+        
+        categoryHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const toggle = this.querySelector('.category-toggle');
+                const isActive = this.classList.contains('active');
+
+                if (isActive) {
+                    this.classList.remove('active');
+                    content.style.display = 'none';
+                    toggle.textContent = '+';
+                } else {
+                    this.classList.add('active');
+                    content.style.display = 'block';
+                    toggle.textContent = '−';
+                }
+            });
+        });
+
+        // Quantity control buttons
+        document.querySelectorAll('.qty-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = this.parentElement.querySelector('input[type="number"]');
+                const currentValue = parseInt(input.value);
+                const max = parseInt(input.max);
+                const min = parseInt(input.min);
+
+                if (this.classList.contains('plus')) {
+                    if (currentValue < max) {
+                        input.value = currentValue + 1;
+                    }
+                } else if (this.classList.contains('minus')) {
+                    if (currentValue > min) {
+                        input.value = currentValue - 1;
+                    }
+                }
+            });
+        });
+
+        // Form submission (if not using FormSubmit redirect)
+        // Commented out since we're using FormSubmit
+        /*
+        const quoteForm = document.getElementById('quoteForm');
+        const successMessage = document.getElementById('successMessage');
+
+        quoteForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Hide form, show success message
+            quoteForm.style.display = 'none';
+            successMessage.style.display = 'block';
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        */
+    </script>
+
+</body>
+</html>
