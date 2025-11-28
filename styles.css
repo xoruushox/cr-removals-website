@@ -8,9 +8,9 @@
     --charcoal-light: #333333;
     --off-white: #FAFAFA;
     --pure-white: #FFFFFF;
-    --accent-green: #10B981;
-    --accent-green-dark: #059669;
-    --accent-green-light: #34D399;
+    --accent-green: #2563EB;
+    --accent-green-dark: #1E40AF;
+    --accent-green-light: #3B82F6;
     --text-grey: #6B7280;
     --border-grey: #E5E7EB;
     --shadow-sm: 0 2px 4px rgba(43,43,43,0.08);
@@ -325,7 +325,7 @@ nav {
 .btn-primary:hover {
     background: var(--accent-green-dark);
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
 }
 
 .btn-secondary {
